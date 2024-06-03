@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open map.js in New Tab</title>
+    <title>Map Application</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.25/esri/themes/light/main.css">
+    <style>
+        html, body, #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .esri-widget {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        #layer-list-btn, #basemap-gallery-btn {
+            position: absolute;
+            top: 10px;
+            right: 60px;
+            z-index: 99;
+            background-color: white;
+            padding: 5px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        #basemap-gallery-btn {
+            right: 10px;
+        }
+    </style>
 </head>
 <body>
+    <div id="viewDiv"></div>
+    <div id="layer-list-btn" class="esri-widget">Toggle Layer List</div>
+    <div id="basemap-gallery-btn" class="esri-widget">Toggle Basemap Gallery</div>
+    <script src="https://js.arcgis.com/4.25/"></script>
     <script src="map.js"></script>
 </body>
 </html>
