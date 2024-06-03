@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map Application</title>
+    <title>Спортни обекти в София</title>
     <link rel="stylesheet" href="https://js.arcgis.com/4.25/esri/themes/light/main.css">
     <style>
         html, body, #viewDiv {
@@ -13,14 +13,14 @@
             width: 100%;
         }
         .esri-widget {
-            position: absolute;
-            top: 10px;
+            position: static;
+            top: 40px;
             right: 10px;
         }
         #layer-list-btn, #basemap-gallery-btn {
             position: absolute;
             top: 10px;
-            right: 60px;
+            right: 80px;
             z-index: 99;
             background-color: white;
             padding: 5px;
@@ -34,8 +34,8 @@
 </head>
 <body>
     <div id="viewDiv"></div>
-    <div id="layer-list-btn" class="esri-widget">Toggle Layer List</div>
-    <div id="basemap-gallery-btn" class="esri-widget">Toggle Basemap Gallery</div>
+    <div id="layer-list-btn" class="esri-widget">Layers</div>
+    <div id="basemap-gallery-btn" class="esri-widget">Basemap</div>
     <script src="https://js.arcgis.com/4.25/"></script>
     <script src="map.js"></script>
 </body>
