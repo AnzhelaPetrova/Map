@@ -25,7 +25,7 @@ require([
         portalItem: {
             id: "da597a65c23a48c58d3278c1d8bf78e5"
         },
-        basemap: "topo-vector"  // Set the basemap to a more colorful one
+        basemap: "topo-vector"
     });
     
     webmap.layers.add(routeLayer);
@@ -34,7 +34,7 @@ require([
         container: "viewDiv",
         map: webmap,
         ui: {
-            components: ["zoom", "compass", "attribution"]  // Remove 'attribution' to hide the attribution text
+            components: ["zoom", "compass", "attribution"]
         }
     });
 
@@ -58,7 +58,7 @@ require([
 
     const layerListDiv = document.createElement("div");
     layerListDiv.className = "esri-layer-list";
-    layerListDiv.style.display = "none";  // Hide initially
+    layerListDiv.style.display = "none";
     document.body.appendChild(layerListDiv);
     layerList.container = layerListDiv;
 
@@ -68,7 +68,7 @@ require([
 
     const basemapGalleryDiv = document.createElement("div");
     basemapGalleryDiv.className = "esri-basemap-gallery";
-    basemapGalleryDiv.style.display = "none";  // Hide initially
+    basemapGalleryDiv.style.display = "none";
     document.body.appendChild(basemapGalleryDiv);
     basemapGallery.container = basemapGalleryDiv;
 
